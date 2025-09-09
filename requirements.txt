@@ -1,3 +1,36 @@
+python3 launch_analyzer.py(USE THIS TO RUN THE PROGRAM)
+
+# 🚦 Advanced Traffic Fingerprinting Analyzer
+
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/anoshmishra/advanced-traffic-fingerprinting-analyzer/ci.yml?branch=main)](https://github.com/anoshmishra/advanced-traffic-fingerprinting-analyzer/actions)
+
+An advanced toolkit for **encrypted traffic fingerprinting analysis**, combining **GUI visualization**, **machine learning models**, and **network security tools** to study, detect, and simulate encrypted flow behaviors.
+
+---
+
+## ✨ Features
+
+- 🔍 Encrypted flow **metadata extraction**
+- 📊 **Visualization dashboard** (interactive GUI)
+- 🤖 **ML/DL integration** (scikit-learn, XGBoost, TensorFlow, PyTorch)
+- 🌐 **Network condition simulation** & security modules (Scapy, Nmap, Paramiko)
+- 📑 **Report generation** in PDF/HTML
+- 🛠️ Configurable & extensible pipeline
+
+---
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/anoshmishra/advanced-traffic-fingerprinting-analyzer.git
+cd advanced-traffic-fingerprinting-analyzer
+pip install -r requirements.txt
+
+
 # ============================================================================
 # ENCRYPTED TRAFFIC FINGERPRINTING ANALYZER - REQUIREMENTS
 # ============================================================================
