@@ -1,0 +1,403 @@
+# ============================================================================
+# ENCRYPTED TRAFFIC FINGERPRINTING ANALYZER - .gitignore
+# ============================================================================
+
+# ============================================================================
+# PYTHON CORE
+# ============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ============================================================================
+# VIRTUAL ENVIRONMENTS
+# ============================================================================
+
+# Virtual environments (all common names)
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pyvenv.cfg
+
+# Conda environments
+.conda/
+conda-meta/
+
+# ============================================================================
+# PROJECT-SPECIFIC DATA & RESULTS
+# ============================================================================
+
+# Large datasets and raw data (keep structure, ignore content)
+data/raw_pcaps/*.pcap
+data/raw_pcaps/*.pcapng
+data/datasets/large_*
+data/datasets/*.csv
+data/datasets/*.json
+data/processed/temp_*
+data/processed/*.csv
+data/processed/*.pkl
+
+# Generated models (these are large binary files)
+results/models/*.joblib
+results/models/*.pkl
+results/models/*.h5
+results/models/*.pt
+results/models/*.onnx
+
+# Generated plots and visualizations
+results/plots/*.png
+results/plots/*.jpg
+results/plots/*.svg
+results/plots/*.pdf
+
+# Generated reports (keep templates, ignore generated)
+results/reports/*.html
+results/reports/*.pdf
+results/reports/*.json
+results/reports/ANALYSIS_*
+results/reports/TECHNICAL_*
+results/reports/ENHANCED_*
+results/reports/AUTOMATED_*
+results/reports/VULN_SCAN_*
+
+# Keep report templates
+!reports/templates/
+!reports/templates/*.html
+
+# ============================================================================
+# LOGS AND TEMPORARY FILES
+# ============================================================================
+
+# Log files
+logs/
+*.log
+*.log.*
+log/
+project.log
+
+# Temporary files
+temp/
+tmp/
+cache/
+.cache/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# ============================================================================
+# JUPYTER NOTEBOOKS
+# ============================================================================
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Jupyter Notebook outputs (optional - uncomment if you want to ignore outputs)
+# *.ipynb
+
+# ============================================================================
+# IDE AND EDITOR FILES
+# ============================================================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+.history/
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# Vim
+*.swp
+*.swo
+.vimrc
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# ============================================================================
+# OPERATING SYSTEM FILES
+# ============================================================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.nfs*
+
+# ============================================================================
+# TESTING AND COVERAGE
+# ============================================================================
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# ============================================================================
+# SECURITY AND SENSITIVE DATA
+# ============================================================================
+
+# Environment variables and secrets
+*.env
+.env.*
+!.env.example
+secrets/
+credentials/
+private_keys/
+
+# API keys and credentials
+*api_key*
+*secret*
+*password*
+*credentials*
+config_local.*
+local_settings.py
+
+# SSL certificates and keys
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================================================
+# NETWORK AND SECURITY TOOLS
+# ============================================================================
+
+# Captured network traffic (sensitive data)
+*.pcap
+*.pcapng
+*.cap
+traffic_captures/
+network_dumps/
+
+# Nmap output files
+*.nmap
+*.gnmap
+*.xml
+
+# Burp Suite files
+*.burp
+burp_*
+
+# Wireshark files
+*.pcapng
+*.pcap
+
+# ============================================================================
+# MACHINE LEARNING AND DATA SCIENCE
+# ============================================================================
+
+# Model checkpoints
+checkpoints/
+*.ckpt
+checkpoint
+
+# TensorFlow
+*.pb
+saved_model/
+tensorflow_logs/
+
+# PyTorch
+*.pth
+*.pt
+
+# Scikit-learn
+*.joblib
+*.pkl
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Weights & Biases
+wandb/
+
+# ============================================================================
+# BUILD AND PACKAGING
+# ============================================================================
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ============================================================================
+# DOCUMENTATION
+# ============================================================================
+
+# Sphinx documentation
+docs/_build/
+docs/build/
+target/
+
+# mkdocs documentation
+/site
+
+# ============================================================================
+# MISC FILES
+# ============================================================================
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Large files
+*.iso
+*.dmg
+
+# ============================================================================
+# PROJECT-SPECIFIC EXCLUSIONS
+# ============================================================================
+
+# Config files with sensitive data
+configs/config_production.yaml
+configs/local_config.yaml
+configs/*_secret*
+
+# Exclude large example datasets but keep structure
+data/examples/large_*
+data/samples/*.pcap
+
+# Exclude user-specific GUI settings
+gui_settings.json
+user_preferences.json
+
+# Exclude generated documentation
+docs/generated/
+docs/api_docs/
+
+# Performance profiling results
+*.prof
+profiling_results/
+
+# ============================================================================
+# EXCEPTIONS (Files to KEEP even if they match patterns above)
+# ============================================================================
+
+# Keep essential config templates
+!configs/config.yaml.template
+!configs/config.yaml.example
+
+# Keep sample data that's small
+!data/samples/small_sample.pcap
+
+# Keep documentation assets
+!docs/images/
+!docs/screenshots/
+!assets/
+
+# Keep essential scripts
+!scripts/
+!*.sh
+!*.bat
+
+# ============================================================================
+# END OF .gitignore
+# ============================================================================
+
